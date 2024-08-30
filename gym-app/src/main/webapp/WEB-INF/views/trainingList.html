@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Training list!</title>
+</head>
+<body>
+<a th:href="@{/training/getTrainingAddPage}">Add training</a>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Training name</th>
+        <th>Training type id</th>
+        <th>Training date</th>
+        <th>Training duration</th>
+    </tr>
+
+    <tr th:each="training:${trainings}">
+        <td th:text="${training.id}"></td>
+        <td th:text="${training.trainingName}"></td>
+        <td th:text="${training.trainingTypeId}"></td>
+        <td th:text="${training.trainingData}"></td>
+        <td th:text="${training.trainingDuration}"></td>
+    </tr>
+</table>
+</body>
+</html>

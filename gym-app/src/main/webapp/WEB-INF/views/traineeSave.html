@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainee save</title>
+</head>
+<body>
+<form action="#" th:action="@{/trainees/getTraineeAddPage}" method="post" th:object="${traineeAdd}">
+
+    <input type="text" name="dateOfBirth" th:field="*{dateOfBirth}">
+    <br>
+    <input type="text" name="address" th:field="*{address}">
+    <br>
+    <input type="text" name="userId" th:field="*{userId}">
+    <br>
+    <br>
+    <button type="submit">Save</button>
+    <br>
+</form>
+</body>
+</html>

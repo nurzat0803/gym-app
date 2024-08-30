@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainee list!</title>
+</head>
+<body>
+<h2>Hello world!+</h2>
+<a href="/listTrainee">Trainee list</a>
+<br>
+<br>
+<a href="/trainee/getTraineeAddPage">Add trainee</a>
+<br>
+<a href="/listTrainer">Trainer list</a>
+<br>
+<br>
+<a href="/trainer/getTrainerAddPage">Add trainer</a>
+<br>
+<a href="/listTraining">Training list</a>
+<br>
+<br>
+<a href="/training/getTrainingAddPage">Add training</a>
+
+<a th:href="@{/trainee/getTraineeAddPage}">Add trainee</a>
+<!--<table>-->
+<!--    <tr>-->
+<!--        <th>ID</th>-->
+<!--        <th>Date of birth</th>-->
+<!--        <th>Address</th>-->
+<!--&lt;!&ndash;        <th>User id</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Action</th>&ndash;&gt;-->
+<!--    </tr>-->
+
+<!--    <tr th:each="trainee:${trainees}">-->
+<!--        <td th:text="${trainee.id}"></td>-->
+<!--        <td th:text="${trainee.dateOfBirth}"></td>-->
+<!--        <td th:text="${trainee.address}"></td>-->
+<!--&lt;!&ndash;        <td th:text="${trainee.userId}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <a th:href="@{/trainees/edit/{id}(id=${trainee.id})}">Update</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            <a th:href="@{/trainee/{id}(id=${trainee.id})}">Delete</a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </td>&ndash;&gt;-->
+<!--    </tr>-->
+<!--</table>-->
+</body>
+</html>

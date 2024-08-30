@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainer save!</title>
+</head>
+<body>
+<form action="#" th:action="@{/trainers/getTrainerAddPage}" method="post" th:object="${trainerAdd}">
+
+    <input type="text" name="specialization" th:field="*{specialization}">
+    <br>
+    <input type="text" name="userId" th:field="*{userId}">
+    <br>
+    <br>
+    <button type="submit">Save</button>
+    <br>
+</form>
+</body>
+</html>
